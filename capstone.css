@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E8F4E7;
+    color: #1C221B;
+}
+
+header {
+    background-color: #E8F4E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid black;
+}
+
+header h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Calistoga", serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #E8F4E7;
+}
+
+.Hero {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 120px;
+    line-height: 120px;
+}
+
+.Hero h1 {
+    font-weight: 400;
+    line-height: 120px;
+    margin-top: 100px;
+    font-size: 120px;
+    margin-bottom: 20px;
+    font-family: "Calistoga", serif;
+}
+
+.Hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.projects {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.projects .project {
+    text-align: center;
+    background-color: #E8F4E7;
+    padding: 15px;
+    font-family: "Courier Prime", serif;
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.projects .project img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.about {
+    margin: 200px 0;
+}
+
+.about p {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 400;
+    font-size: 48px;
+    margin: 50px 0px;
+    line-height: 52px;
+    font-family: "Calistoga", serif;
+}
+
+footer {
+    background-color: #E8F4E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    border-top: 1px solid;
+}
+
+footer p {
+    margin-top: 50px;
+}
+
+.left-footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 52px;
+    font-family: "Calistoga", serif;
+}
+
+#right {
+    font-size: 24px;
+    font-family: "Courier Prime", serif;
+    line-height: 32px;
+}
+
+footer .subscription {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer input[type="email"] {
+    padding: 12px 170px 12px 8px;
+    background: transparent;
+    margin-top: 20px;
+    color: #1C221B;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid #1C221B;
+    border-radius: 8px;
+    font-family: "Courier Prime", serif;
+}
+
+footer button {
+    padding: 14px 24px;
+    background-color: #F13914;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Courier Prime", serif;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media p {
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    text-align: left;
+    font-family: "Calistoga", serif;
+    background-color: #E8F4E7;
+}
+
+.foot p {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.foot button {
+    background: transparent;
+    border-radius: 8px;
+    padding: 14px 24px;
+    font-family: "Courier Prime", serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #1C221B;
+    border: 1px solid #00000029;
+}
+
+.fa-brands {
+    font-size: 48px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 250px;
+    gap: 50px;
+}
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+    .Hero h1 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about p {
+        width: 80vw;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .left-footer {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 36px;
+    }
+
+    #right {
+        font-size: 20px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .Hero h1 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-top: 50px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    .projects .project img {
+        height: 250px;
+    }
+
+    .about {
+        margin: 100px 0;
+    }
+
+    .about p {
+        width: 100%;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .left-footer {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer .subscription {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer input[type="email"] {
+        width: 80%;
+        padding: 12px;
+    }
+
+    .social-media p {
+        font-size: 28px;
+    }
+
+    .icon {
+        margin-bottom: 100px;
+        gap: 30px;
+    }
+
+    .fa-brands {
+        font-size: 36px;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .foot p {
+        font-size: 24px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .Hero h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .projects .project {
+        font-size: 18px;
+    }
+
+    .about p {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    footer input[type="email"] {
+        width: 90%;
+    }
+
+    .fa-brands {
+        font-size: 32px;
+    }
+}
